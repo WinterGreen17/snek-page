@@ -1,27 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
 
+import GlobalHeader from './Components/GlobalHeader';
+import { Button, Grid } from '@mui/material';
+
 function App() {
   return (
     <div className="App">
-       {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header> */}
+      <GlobalHeader />
       <h1>Hello world!</h1>
-      <button>Survey 1</button>
-      <button>Survey 2</button>
-      <button>Info</button>
+      <Grid container spacing={2} >
+        <Grid item xs={12}><Button size='large' variant="contained" >Survey 1</Button></Grid>
+        <Grid item xs={12}><Button size='large' variant="contained" >Survey 2</Button></Grid>
+        <Grid item xs={12}><Button size='large' variant="contained" >Info</Button></Grid>
+
+      </Grid>
+
+     
+
+      
     </div>
   );
 }
