@@ -4,10 +4,10 @@ import './App.css';
 import GlobalHeader from './Components/GlobalHeader';
 import { useState } from 'react';
 import Home from './Components/Home';
+import { ToastContainer, toast } from 'react-toastify';
 
 
 function App() {
-  const [showPopup, setShowPopup] = useState(false);
   const [showWebsite1, setShowWebsite1] = useState(false);
   const [showWebsite2, setShowWebsite2] = useState(false);
 
@@ -24,12 +24,7 @@ function App() {
     setShowWebsite2(false);
   }
 
-  function handleButtonClick() {
-    setShowPopup(true);
-  }
-  if (showPopup) {
-    alert("Stuart is dangerous snek");
-  }
+ 
   return (
     <div className="App">
       <GlobalHeader onClick={showHome} />
@@ -45,9 +40,8 @@ function App() {
           src="https://luhanyang.wordpress.com/"
           style={{ width: '100vw', height: '100vw' }}
         />
-      ): (<Home handleButtonClick={handleButtonClick} showWebsiteFrame1={showWebsiteFrame1} showWebsiteFrame2={showWebsiteFrame2} />))}
+      ): (<Home showWebsiteFrame1={showWebsiteFrame1} showWebsiteFrame2={showWebsiteFrame2} />))}
 
-      
     </div>
   );
 }
