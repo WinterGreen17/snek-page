@@ -11,7 +11,7 @@ const Home = (props) => {
           <Grid item xs={12}><Button size='large' variant="contained" onClick={props.showWebsiteFrame2}>Survey 2</Button></Grid>
           <Grid item xs={12}>
           <Popup trigger={<Button size='large' variant="contained">Info</Button>}>
-            <>Stuart is very dangerous snek</>
+            <>This app is fun</>
           </Popup>
        
           </Grid>
