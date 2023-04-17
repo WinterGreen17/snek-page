@@ -8,7 +8,7 @@ const GlobalHeader = (props) => {
       <AppBar position="static">
       <Toolbar>
         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-          Stuart da Snek
+        Sustainability on the GO!
         </Typography>
         <Button variant='outlined' color="inherit" onClick={props.onClick}>Home</Button>
       </Toolbar>
