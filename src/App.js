@@ -4,7 +4,8 @@ import './App.css';
 import GlobalHeader from './Components/GlobalHeader';
 import { useState } from 'react';
 import Home from './Components/Home';
-import { ToastContainer, toast } from 'react-toastify';
+import { BottomNavigation } from '@mui/material';
+import myImage from './unnamed.png'
 
 
 function App() {
@@ -41,6 +42,16 @@ function App() {
           style={{ width: '100vw', height: '150vw' }}
         />
       ): (<Home showWebsiteFrame1={showWebsiteFrame1} showWebsiteFrame2={showWebsiteFrame2} />))}
+
+<BottomNavigation style={{
+    position: 'fixed',
+    justifyContent:"left",
+    left: 0,
+    bottom: 0,
+    width: '100%',}}>
+    <img  src={myImage}/>
+      
+    </BottomNavigation>
 
     </div>
   );
