@@ -1,6 +1,8 @@
 import { Button, Grid } from '@mui/material';
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css'
+import { BottomNavigation } from '@mui/material';
+import myImage from '../unnamed.png'
 
 const Home = (props) => {
     return (
@@ -16,7 +18,18 @@ const Home = (props) => {
        
           </Grid>
           
-        </Grid></div>
+        </Grid>
+
+        <BottomNavigation style={{
+    position: 'fixed',
+    justifyContent:"left",
+    left: 0,
+    bottom: 0,
+    width: '100%',}}>
+    <img  src={myImage}/>
+      
+    </BottomNavigation>
+        </div>
     );
   };
   
