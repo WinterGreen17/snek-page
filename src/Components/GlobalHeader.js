@@ -5,7 +5,7 @@ import Typography from '@mui/material/Typography';
 import { Button } from '@mui/material';
 const GlobalHeader = (props) => {
     return (
-      <AppBar position="static">
+      <AppBar position="static" style={{backgroundColor:'green'}}>
       <Toolbar>
         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
           Stuart da Snek
