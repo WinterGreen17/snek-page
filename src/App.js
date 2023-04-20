@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 
 import GlobalHeader from './Components/GlobalHeader';
@@ -32,13 +31,13 @@ function App() {
       {(showWebsite1) ? (
         <iframe title='survey1'
           src="https://myworld2030.org/partner/LPE_PSU"
-          style={{ width: '100vw', height: '100vw' }}
+          style={{ width: '100vw', height: '100vh' }}
         />
       ): (
         ( showWebsite2) ? (
         <iframe title='survey2'
-          src="https://luhanyang.wordpress.com/"
-          style={{ width: '100vw', height: '100vw' }}
+          src="https://pennstate.qualtrics.com/jfe/form/SV_eu5L5iUKF54yq0e"
+          style={{ width: '100vw', height: '100vh' }}
         />
       ): (<Home showWebsiteFrame1={showWebsiteFrame1} showWebsiteFrame2={showWebsiteFrame2} />))}
 

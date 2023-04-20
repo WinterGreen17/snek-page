@@ -5,12 +5,12 @@ import Typography from '@mui/material/Typography';
 import { Button } from '@mui/material';
 const GlobalHeader = (props) => {
     return (
-      <AppBar position="static" style={{backgroundColor:'green'}}>
-      <Toolbar>
-        <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-          Stuart da Snek
+      <AppBar position="static" style={{backgroundColor:'rgb(23,174,117)'}}>
+      <Toolbar style={{ padding: '11px 35px'}}>
+        <Typography variant="h4" component="div" sx={{ flexGrow: 1 }}>
+        <b>Sustainability on the GO!</b>
         </Typography>
-        <Button variant='outlined' color="inherit" onClick={props.onClick}>Home</Button>
+        <Button style={{height:"100%", fontSize:'21px'}} variant='outlined' color="inherit" onClick={props.onClick}>Home</Button>
       </Toolbar>
     </AppBar>
     );
