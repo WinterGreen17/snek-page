@@ -32,7 +32,7 @@ function App() {
       {(showWebsite1) ? (
         <iframe title='survey1'
           src="https://myworld2030.org/partner/LPE_PSU"
-          style={{ width: '100vw', height: '100vw' }}
+          style={{ width: '100vw', height: '150vw' }}
         />
       ): (
         ( showWebsite2) ? (
